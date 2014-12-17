@@ -30,7 +30,7 @@ var destPath = './build'
  * Handles an error event.
  */
 function swallowError(error) {
-  gutil.log(error);
+  gutil.log(error.message);
   this.emit('end');
 }
 
@@ -73,7 +73,7 @@ gulp.task('js', function() {
     .transform(reactify)
     .bundle()
     .on('error', function (err) {
-      gutil.log(err);
+      gutil.log(err.message);
       this.emit('end');
     })
     .pipe(source('bundle.js'))
