@@ -1,0 +1,11 @@
+{
+  "name": "generator-simple-react",
+  "version": "0.1.0",
+  "description": "A simple React application generator",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.18.4"
+  }
+}
