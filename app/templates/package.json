@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "server": "gulp server",
+    "output": "gulp"
+  },
   "devDependencies": {
     "browserify": "^6.3.3",
     "del": "^0.1.3",

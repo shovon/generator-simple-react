@@ -5,7 +5,11 @@
   "keywords": [
     "yeoman-generator"
   ],
+  "scripts": {
+    "test": "mocha"
+  },
   "dependencies": {
+    "mocha": "^2.1.0",
     "yeoman-generator": "^0.18.4"
   }
 }
