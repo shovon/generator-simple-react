@@ -14,8 +14,12 @@ module.exports = generators.Base.extend({
       }
     );
 
+    this.fs.copy(
+      this.templatePath('gitignore'),
+      this.destinationPath('.gitignore')
+    );
+
     [
-      '.gitignore',
       'gulpfile.js',
       'package.json',
       'src/app.jsx',
