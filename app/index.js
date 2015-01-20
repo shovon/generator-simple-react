@@ -3,8 +3,17 @@ var generators = require('yeoman-generator');
 module.exports = generators.Base.extend({
   constructor: function () {
     generators.Base.apply(this, arguments);
+    this.argument('apptitle', {type: String, required: true});
   },
   writing: function () {
+    this.fs.copyTpl(
+      this.templatePath('src/index.html'),
+      this.destinationPath('src/index.html'),
+      {
+        title: this.apptitle
+      }
+    );
+
     [
       '.gitignore',
       'gulpfile.js',
