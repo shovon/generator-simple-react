@@ -157,7 +157,7 @@ gulp.task('watch', function() {
 /*
  * Run the server.
  */
-gulp.task('just-web-server', ['watch'], function () {
+gulp.task('just-web-server', function () {
   return gulp.src(destPath)
     .pipe(webserver({
       livereload: true,
