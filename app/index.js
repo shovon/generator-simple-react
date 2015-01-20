@@ -32,5 +32,9 @@ module.exports = generators.Base.extend({
         this.destinationPath(filename)
       );
     }.bind(this));
+  },
+
+  install: function () {
+    this.installDependencies({npm: true, bower: false});
   }
 });
